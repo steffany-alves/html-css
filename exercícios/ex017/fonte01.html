@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* safe combination. alternativas de uso. caso a arial não funcione, tentará com a helvetica */
+
+            /* 
+            Medidas absolutas
+            cm, mm, in, px, pt, pc (recomendado usar px)
+
+            Medidas relativas 
+            em, ex, rem, vw, vh, % (recomendado usar em)
+
+            16px geralmente = 1em
+            */
+            /*font-size: 1em;
+            font-weight: bold; (ou usar 100-900)
+            (lighter normal bold bolder)
+            font-style: italic;
+            text-decoration: underline;*/
+
+            /*shorthand font
+            -font-style -> font-weight -> font-size -> font-family*/
+            font: italic bold 1em arial
+
+            /*weight width height - peso largura altura*/
+        }
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat minima dolore nostrum esse quod nulla blanditiis accusantium veniam voluptatem quas facere ipsa aperiam, inventore vel ullam aliquam pariatur ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, suscipit a molestiae est iste consectetur dolore quibusdam. Eos iure cupiditate illo, magni totam voluptate praesentium quasi. Nulla, quas. Consectetur, earum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur voluptate quibusdam ad nihil perspiciatis recusandae? Vel corporis ea quos maiores, laudantium odit cumque, placeat consequatur commodi laborum pariatur deserunt?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum excepturi repellat earum ea hic, quisquam consectetur, iure veniam libero, voluptates ut beatae. Dolore repellat dolor veniam laboriosam placeat reprehenderit libero?</p>
+    
+</body>
+</html>

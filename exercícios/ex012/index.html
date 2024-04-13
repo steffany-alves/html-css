@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no emu próprio servidor.</p>
+    <video width="560" poster="imagens/arvores.png" controls autoplay loop>
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm.webm" type="video/webm">
+        <source src="midia/meu-video.m4v.m4v" type="video/m4v">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogv">
+        <p>Seu navegador não tem comtabilidade com reprodução de vídeo.</p>
+    </video>
+    <!--Os vídeos são os mesmos, porém em formatos diferentes, pois precisamos usar todos os formatos possíveis para que o site seja compatível com todos os navegadores. Primeiro irá tentar rodar MP$, se não for compatível, o WEBM e assim por diante. Caso nenhum seja compatível, irá mostrar a mensagem em tag <p>-->
+    <!--Com essa tag video o tráfego pode custar caro caso o não seja compatível com a priemira opção MP4, pois terá que ir testando os outros formatos.-->
+    <!--Método custoso-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vduA_6iA7wQ?si=GHwV0QQ3p-9o_DtW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></iframe> 
+    <!--Clique em compartilhar no vídeo desejado no youtube e clique em inserir, depois copie e cole aqui. Dessa forma é consumido dados do YouTube. Menos custoso-->
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/877150472?h=cad5111f8d&autoplay=1&loop=1" width="560" height="221" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/877150472">ICELAND // GUSTS FROM THE HIGHLANDS</a> from <a href="https://vimeo.com/codylaplant">Cody LaPlant</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
